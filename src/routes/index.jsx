@@ -1,5 +1,7 @@
 import Layout from "../Layout"
 import Home from "../Pages/Home";
+import Products from "../Pages/Products";
+import Detail from "../Pages/Detail";
 
 const routes = [
     {
@@ -9,7 +11,15 @@ const routes = [
             {
                 path: '',
                 element:<Home/>
-            }
+            },
+            {
+                path: 'products',
+                element:<Products/>
+            },
+            {
+                path: 'product/:id',
+                element:<Detail/>
+            },
         ]
     }
 ]
